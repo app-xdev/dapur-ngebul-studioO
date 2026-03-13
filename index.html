@@ -1,67 +1,453 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>App-xdev - Dapurngebul | Edit Video Masal Rp 100.000</title>
+  <meta name="description" content="App-xdev - Dapurngebul menyediakan App Dapur Ngebul (render cepat, visual edit, album merger) & App Video Colase (download masal, edit masal, video short YouTube). Hanya Rp 100.000, support PC low-end." />
+  <meta name="keywords" content="App-xdev, Dapurngebul, App Dapur Ngebul, App Video Colase, edit video masal, render video cepat, download video masal, video short YouTube, tools video editing, PC low-end" />
+  <meta name="author" content="App-xdev - Dapurngebul" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="App-xdev - Dapurngebul" />
+  <meta property="og:title" content="App-xdev - Dapurngebul | Edit Video Masal Rp 100.000" />
+  <meta property="og:description" content="Tools video editing otomatis: App Dapur Ngebul & Video Colase. Support PC low-end." />
+  <meta property="og:url" content="https://app-xdev.github.io/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="App-xdev - Dapurngebul | Edit Video Masal" />
+  <meta name="twitter:description" content="Edit video masal & render cepat di PC low-end. Hanya Rp 100.000." />
+  <link rel="canonical" href="https://app-xdev.github.io/" />
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <meta name="google-adsense-account" content="ca-pub-8033409291325553" />
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8033409291325553" crossorigin="anonymous"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <!-- Primary Meta -->
-    <title>App-xdev - Dapurngebul | Edit Video Masal Rp 100.000</title>
-    <meta name="description" content="App-xdev - Dapurngebul menyediakan App Dapur Ngebul (render cepat, visual edit, album merger) & App Video Colase (download masal, edit masal, video short YouTube). Hanya Rp 100.000, support PC low-end." />
-    <meta name="keywords" content="App-xdev, Dapurngebul, App Dapur Ngebul, App Video Colase, edit video masal, render video cepat, download video masal, video short YouTube, tools video editing, PC low-end, batch video editor" />
-    <meta name="author" content="App-xdev - Dapurngebul" />
-    <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="App-xdev - Dapurngebul" />
-    <meta property="og:title" content="App-xdev - Dapurngebul | Edit Video Masal Rp 100.000" />
-    <meta property="og:description" content="Tools video editing otomatis: App Dapur Ngebul (render, visual edit, album merger) & Video Colase (download masal, edit masal, video short). Support PC low-end." />
-    <meta property="og:locale" content="id_ID" />
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="App-xdev - Dapurngebul | Edit Video Masal" />
-    <meta name="twitter:description" content="Edit video masal & render cepat di PC low-end. Hanya Rp 100.000. Download masal, edit masal, video short YouTube." />
-
-    <!-- JSON-LD Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "SoftwareApplication",
-      "name": "App-xdev - Dapurngebul",
-      "applicationCategory": "MultimediaApplication",
-      "operatingSystem": "Windows",
-      "offers": [
-        {
-          "@type": "Offer",
-          "name": "App Dapur Ngebul",
-          "price": "100000",
-          "priceCurrency": "IDR",
-          "availability": "https://schema.org/InStock"
-        },
-        {
-          "@type": "Offer",
-          "name": "App Video Colase",
-          "price": "100000",
-          "priceCurrency": "IDR",
-          "availability": "https://schema.org/InStock"
-        }
-      ],
-      "description": "Tools video editing otomatis untuk YouTube Shorts dan sosial media. App Dapur Ngebul & Video Colase support PC low-end.",
-      "author": {
-        "@type": "Organization",
-        "name": "App-xdev - Dapurngebul"
-      }
+    body {
+      background: #0d0d0d;
+      color: #f2f2f2;
+      font-family: 'Roboto', sans-serif;
+      min-height: 100vh;
     }
-    </script>
 
-    <!-- AdSense -->
-    <meta name="google-adsense-account" content="ca-pub-8033409291325553" />
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8033409291325553" crossorigin="anonymous"></script>
-  </head>
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, hsl(25,70%,15%), hsl(20,75%,22%), hsl(30,80%,18%), hsl(15,65%,25%));
+      padding: 80px 16px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero-glow-1 {
+      position: absolute; top: 40px; left: 40px;
+      width: 128px; height: 128px; border-radius: 50%;
+      background: radial-gradient(circle, #ff6a00, transparent);
+      opacity: 0.2; pointer-events: none;
+    }
+    .hero-glow-2 {
+      position: absolute; bottom: 40px; right: 40px;
+      width: 160px; height: 160px; border-radius: 50%;
+      background: radial-gradient(circle, #ee0979, transparent);
+      opacity: 0.2; pointer-events: none;
+    }
+    .hero-inner { max-width: 896px; margin: 0 auto; position: relative; z-index: 1; }
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+    .emoji-race {
+      font-size: 64px;
+      display: inline-block;
+      animation: bounce 1s infinite;
+      margin-bottom: 8px;
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+
+    .tagline {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 900;
+      color: #ffd93d;
+      text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+      margin-bottom: 16px;
+    }
+
+    h1.hero-title {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(1.8rem, 5vw, 3.75rem);
+      font-weight: 900;
+      line-height: 1.2;
+      margin-bottom: 24px;
+    }
+    .rainbow-1 {
+      background: linear-gradient(90deg, #ff6b6b, #ffd93d, #6bcb77, #4d96ff, #c77dff, #ff6bcd);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 2px 8px rgba(255,200,0,0.3));
+    }
+    .rainbow-2 {
+      background: linear-gradient(90deg, #c77dff, #4d96ff, #6bcb77, #ffd93d, #ff6b6b);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      filter: drop-shadow(0 2px 8px rgba(255,100,100,0.3));
+    }
+
+    .hero-desc {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: #ffe5b4;
+      text-shadow: 0 1px 6px rgba(0,0,0,0.5);
+      max-width: 672px;
+      margin: 0 auto 40px;
+      line-height: 1.6;
+    }
+
+    .btn-fire {
+      display: inline-block;
+      background: linear-gradient(135deg, #ff6a00, #ee0979);
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 1.125rem;
+      padding: 16px 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(238,9,121,0.5);
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: transform 0.2s, opacity 0.2s;
+    }
+    .btn-fire:hover { transform: scale(1.05); opacity: 0.9; }
+
+    .friday-hint {
+      margin-top: 12px;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: #ffd93d;
+      text-shadow: 0 1px 4px rgba(0,0,0,0.5);
+      display: none;
+    }
+
+    /* Ad Banner */
+    .ad-banner { width: 100%; display: flex; justify-content: center; padding: 16px; background: #0d0d0d; }
+
+    /* Products */
+    .products-section { padding: 64px 16px; background: #0d0d0d; }
+    .section-title {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(1.4rem, 3vw, 1.875rem);
+      font-weight: 700;
+      text-align: center;
+      color: #f2f2f2;
+      margin-bottom: 8px;
+    }
+    .section-sub { text-align: center; color: #999; margin-bottom: 48px; }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 32px;
+      max-width: 1152px;
+      margin: 0 auto;
+    }
+    @media (min-width: 768px) {
+      .products-grid { grid-template-columns: 1fr 1fr; }
+    }
+
+    .card {
+      background: #1a1a1a;
+      border: 1px solid #2d2d2d;
+      border-radius: 12px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+      transition: box-shadow 0.2s;
+    }
+    .card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.5); }
+    .card.highlight { outline: 2px solid #10b981; }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 24px;
+    }
+    .card-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #f2f2f2;
+    }
+    .price-badge {
+      background: #10b981;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 1rem;
+      padding: 8px 16px;
+      border-radius: 8px;
+      white-space: nowrap;
+    }
+
+    .features { list-style: none; flex: 1; margin-bottom: 32px; }
+    .features li {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      margin-bottom: 12px;
+      color: rgba(242,242,242,0.8);
+      font-size: 0.95rem;
+    }
+    .check { color: #10b981; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+
+    .btn-wa {
+      display: block;
+      text-align: center;
+      background: #10b981;
+      color: #fff;
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      padding: 12px 32px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .btn-wa:hover { opacity: 0.9; }
+
+    /* Specs */
+    .specs-section {
+      background: #111;
+      padding: 48px 16px;
+      text-align: center;
+    }
+    .specs-title {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(1.4rem, 3vw, 1.875rem);
+      font-weight: 700;
+      color: #f2f2f2;
+      margin-bottom: 8px;
+    }
+    .specs-sub { color: rgba(242,242,242,0.6); margin-bottom: 32px; }
+
+    .specs-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      max-width: 768px;
+      margin: 0 auto;
+    }
+    @media (min-width: 768px) { .specs-grid { grid-template-columns: repeat(4,1fr); } }
+
+    .spec-item { text-align: center; }
+    .spec-icon { font-size: 2.5rem; margin-bottom: 12px; }
+    .spec-label {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #f2f2f2;
+      margin-bottom: 4px;
+    }
+    .spec-desc { font-size: 0.8rem; color: rgba(242,242,242,0.55); }
+
+    /* Footer */
+    footer {
+      background: #1a1a1a;
+      border-top: 1px solid #2d2d2d;
+      padding: 32px 16px;
+      text-align: center;
+      color: #666;
+      font-size: 0.875rem;
+    }
+
+    /* Login link */
+    .nav-bar {
+      background: #1a1a1a;
+      border-bottom: 1px solid #2d2d2d;
+      padding: 12px 24px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    .nav-link {
+      color: #10b981;
+      text-decoration: none;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 600;
+    }
+    .nav-link:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+
+  <!-- Nav -->
+  <nav class="nav-bar">
+    <a href="login.html" class="nav-link">🔐 Member Login</a>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero-glow-1"></div>
+    <div class="hero-glow-2"></div>
+    <div class="hero-inner">
+      <div class="emoji-race">🏎️💨🔥</div>
+      <p class="tagline">dan GASS!!! Jadi youtuber hebat dengan app</p>
+      <h1 class="hero-title">
+        <span class="rainbow-1">Edit Video Masal &amp; Render Cepat</span><br>
+        <span class="rainbow-2">di PC Low-End</span>
+      </h1>
+      <p class="hero-desc">
+        Tools video editing otomatis untuk YouTube Shorts, sosial media, dan konten kreator. Harga terjangkau, performa ringan.
+      </p>
+      <a href="#products" class="btn-fire" id="cta-btn">🔥 Lihat Produk — Rp 100.000</a>
+      <p class="friday-hint" id="friday-hint">
+        🗓️ Setiap hari Jumat cukup <strong>Rp 50.000</strong> saja!
+      </p>
+    </div>
+  </section>
+
+  <!-- Ad -->
+  <div class="ad-banner">
+    <ins class="adsbygoogle" style="display:block;width:100%;max-width:728px;"
+      data-ad-client="ca-pub-8033409291325553"
+      data-ad-slot="7166650281"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  </div>
+
+  <!-- Products -->
+  <section class="products-section" id="products">
+    <div style="max-width:1152px;margin:0 auto;">
+      <h2 class="section-title">💻 Produk Kami</h2>
+      <p class="section-sub">Tools khusus PC. Harga terjangkau, fitur lengkap.</p>
+      <div class="products-grid">
+
+        <!-- Card 1 -->
+        <div class="card">
+          <div class="card-header">
+            <span class="card-title">App Dapur Ngebul</span>
+            <span class="price-badge" id="badge-1">Rp 100.000</span>
+          </div>
+          <ul class="features">
+            <li><span class="check">✓</span> Render App — rendering video cepat &amp; ringan</li>
+            <li><span class="check">✓</span> Visual Edit — edit video dengan tampilan visual</li>
+            <li><span class="check">✓</span> Album Video Merger — gabung video jadi album</li>
+            <li><span class="check">✓</span> MP3 Full Album — konversi &amp; gabung audio album lengkap</li>
+            <li><span class="check">✓</span> Download Full Album / Satuan — dari YouTube, SoundCloud &amp; sumber MP3 lainnya secara masal</li>
+          </ul>
+          <a href="#" class="btn-wa" id="wa-btn-1">Order via WhatsApp</a>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card highlight">
+          <div class="card-header">
+            <span class="card-title">App Video Colase</span>
+            <span class="price-badge" id="badge-2">Rp 100.000</span>
+          </div>
+          <ul class="features">
+            <li><span class="check">✓</span> Buat Video Short YouTube dengan mudah</li>
+            <li><span class="check">✓</span> Download Masal Video dari Sosmed (TikTok, IG, FB, dll)</li>
+            <li><span class="check">✓</span> Edit Masal Video — batch editing otomatis</li>
+            <li><span class="check">✓</span> Edit Manual Preview — preview sebelum export</li>
+            <li><span class="check">✓</span> Koran Tempel Video Edit — tinggal klik-klik mouse</li>
+            <li><span class="check">✓</span> Video Musang — generate dari video lokal, edit cepat langsung jadi</li>
+          </ul>
+          <a href="#" class="btn-wa" id="wa-btn-2">Order via WhatsApp</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Ad -->
+  <div class="ad-banner">
+    <ins class="adsbygoogle" style="display:block;width:100%;max-width:728px;"
+      data-ad-client="ca-pub-8033409291325553"
+      data-ad-slot="7166650281"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  </div>
+
+  <!-- Specs -->
+  <section class="specs-section">
+    <h2 class="specs-title">🖥️ Support PC Low-End</h2>
+    <p class="specs-sub">Render cepat dengan spesifikasi minimal. Percepatan hardware GPU/VGA didukung.</p>
+    <div class="specs-grid">
+      <div class="spec-item">
+        <div class="spec-icon">🖥️</div>
+        <div class="spec-label">Dual-Core</div>
+        <div class="spec-desc">Processor Minimum</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-icon">💾</div>
+        <div class="spec-label">1 GB RAM</div>
+        <div class="spec-desc">Memory Minimum</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-icon">💿</div>
+        <div class="spec-label">50 GB HDD</div>
+        <div class="spec-desc">Storage Minimum</div>
+      </div>
+      <div class="spec-item">
+        <div class="spec-icon">🎮</div>
+        <div class="spec-label">GPU / VGA</div>
+        <div class="spec-desc">Hardware Acceleration</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ad -->
+  <div class="ad-banner">
+    <ins class="adsbygoogle" style="display:block;width:100%;max-width:728px;"
+      data-ad-client="ca-pub-8033409291325553"
+      data-ad-slot="7166650281"
+      data-ad-format="auto"
+      data-full-width-responsive="true"></ins>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>© <span id="year"></span> App-xdev — Semua hak dilindungi. Kami hanya jual tools, bukan workshop(WS/CLASS) atau trik instan.</p>
+  </footer>
+
+  <script>
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Friday pricing
+    const isFriday = new Date().getDay() === 5;
+    const phone = '628562626116';
+
+    function waLink(appName) {
+      let msg = 'Permisi order ' + appName;
+      if (isFriday) msg += ' *kode jumat berkah*';
+      return 'https://wa.me/' + phone + '?text=' + encodeURIComponent(msg);
+    }
+
+    if (isFriday) {
+      document.getElementById('cta-btn').textContent = '🔥 Lihat Produk — Rp 50.000 (Promo Jumat!)';
+      document.getElementById('badge-1').textContent = 'Rp 50.000';
+      document.getElementById('badge-2').textContent = 'Rp 50.000';
+    } else {
+      document.getElementById('friday-hint').style.display = 'block';
+    }
+
+    document.getElementById('wa-btn-1').href = waLink('App Dapur Ngebul');
+    document.getElementById('wa-btn-2').href = waLink('App Video Colase');
+
+    // Smooth scroll
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+      a.addEventListener('click', function(e) {
+        var target = document.querySelector(this.getAttribute('href'));
+        if (target) { e.preventDefault(); target.scrollIntoView({ behavior: 'smooth' }); }
+      });
+    });
+
+    // AdSense
+    try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+    try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+    try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch(e) {}
+  </script>
+</body>
 </html>

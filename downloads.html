@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Member Downloads — App-xdev</title>
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="favicon.ico" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { background: #0d0d0d; color: #f2f2f2; font-family: 'Roboto', sans-serif; min-height: 100vh; }
+
+    header {
+      background: #1a1a1a;
+      border-bottom: 1px solid #2d2d2d;
+      padding: 16px 24px;
+    }
+    .header-inner {
+      max-width: 896px; margin: 0 auto;
+      display: flex; align-items: center; justify-content: space-between;
+    }
+    .back-link, .logout-btn {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 0.875rem; font-family: 'Roboto', sans-serif;
+      color: #888; text-decoration: none;
+      background: none; border: none; cursor: pointer;
+      transition: color 0.15s;
+    }
+    .back-link:hover { color: #f2f2f2; }
+    .logout-btn:hover { color: #f87171; }
+    .header-title {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700; font-size: 1.125rem;
+      color: #f2f2f2;
+    }
+
+    main { padding: 48px 16px; }
+    .main-inner { max-width: 896px; margin: 0 auto; }
+
+    h2 {
+      font-family: 'Inter', sans-serif;
+      font-size: clamp(1.4rem, 3vw, 1.875rem);
+      font-weight: 700; text-align: center;
+      color: #f2f2f2; margin-bottom: 8px;
+    }
+    .sub { text-align: center; color: #888; margin-bottom: 40px; }
+
+    .dl-list { display: flex; flex-direction: column; gap: 24px; }
+
+    .dl-card {
+      background: #1a1a1a;
+      border: 1px solid #2d2d2d;
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    @media (min-width: 640px) {
+      .dl-card { flex-direction: row; align-items: center; justify-content: space-between; }
+    }
+
+    .dl-name {
+      font-family: 'Inter', sans-serif;
+      font-weight: 700; font-size: 1.125rem;
+      color: #f2f2f2; margin-bottom: 4px;
+    }
+    .dl-desc { font-size: 0.875rem; color: #888; }
+
+    .btn-dl {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: #10b981; color: #fff;
+      font-family: 'Inter', sans-serif; font-weight: 700;
+      padding: 10px 24px; border-radius: 8px;
+      text-decoration: none; white-space: nowrap;
+      transition: opacity 0.15s; flex-shrink: 0;
+    }
+    .btn-dl:hover { opacity: 0.9; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="back-link">← Kembali</a>
+      <span class="header-title">Member Downloads</span>
+      <button class="logout-btn" onclick="logout()">Logout ↩</button>
+    </div>
+  </header>
+
+  <main>
+    <div class="main-inner">
+      <h2>📦 Download Aplikasi</h2>
+      <p class="sub">Pilih aplikasi yang ingin di-download</p>
+
+      <div class="dl-list">
+        <div class="dl-card">
+          <div>
+            <div class="dl-name">App Dapur Ngebul</div>
+            <div class="dl-desc">Render App, Visual Edit, Album Video Merger, MP3 Full Album</div>
+          </div>
+          <a href="#dapur-ngebul" class="btn-dl">⬇ Download</a>
+        </div>
+        <div class="dl-card">
+          <div>
+            <div class="dl-name">App Video Colase</div>
+            <div class="dl-desc">Download Masal, Edit Masal, Koran Tempel, Video Musang</div>
+          </div>
+          <a href="#video-colase" class="btn-dl">⬇ Download</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    if (sessionStorage.getItem('member_auth') !== 'true') {
+      window.location.href = 'login.html';
+    }
+    function logout() {
+      sessionStorage.removeItem('member_auth');
+      window.location.href = 'login.html';
+    }
+  </script>
+</body>
+</html>
