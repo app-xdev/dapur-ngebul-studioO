@@ -1,21 +1,26 @@
 #!/bin/bash
-# Script push otomatis ke GitHub menggunakan GITHUB_TOKEN
 set -e
 
 REPO="https://${GITHUB_TOKEN}@github.com/app-xdev/dapur-ngebul-studioO.git"
 
-echo "⚙️  Menyiapkan git..."
+echo "⚙️  Setup git..."
 git config user.email "replit@agent.com"
 git config user.name "Replit Agent"
 
-echo "📦 Menambahkan semua file..."
-git add -A
+echo "📦 Tambah semua file..."
+git add index.html login.html downloads.html server.js push.sh
+git add .github/workflows/deploy.yml
+git add public/
 
-echo "💬 Membuat commit..."
-git commit -m "feat: pure HTML + Google login UI + deploy workflow" || echo "Tidak ada perubahan baru."
+echo "💬 Commit..."
+git diff --cached --quiet && echo "Tidak ada perubahan." || git commit -m "feat: HTML pages + Google login + fixed deploy workflow"
 
 echo "🚀 Push ke GitHub..."
-git push "$REPO" HEAD:main --force
+git push "$REPO" HEAD:main
 
-echo "✅ Berhasil! Cek GitHub Actions di:"
-echo "   https://github.com/app-xdev/dapur-ngebul-studioO/actions"
+echo ""
+echo "✅ BERHASIL PUSH!"
+echo "   Tunggu 1-2 menit lalu cek:"
+echo "   🌐 https://app-xdev.github.io/"
+echo "   🔐 https://app-xdev.github.io/login.html"
+echo "   📦 https://app-xdev.github.io/downloads.html"
